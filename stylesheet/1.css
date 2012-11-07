@@ -1,14 +1,17 @@
 body {margin:0px;}
-div#header {background-color:#484891;height:200px;}
+div#header {background-color:#484891;height:200px;margin:0px}
 h1 {color:#FFFFFF;font-size:50px;padding:10px 10px 10px 100px;}
 
-div#content {border:solid 20px #C7C7E2;margin:10px;padding:10px 10px 10px 10px;
+div#content {margin:10px;padding:10px 10px 10px 10px;
 width:900px;margin:auto;}
 
 
-div#picture {display:inline-block;width:600px;height:350px;background:#eee;
-border:solid 3px #C7C7E2;margin:20px;}
+div#picture {display:inline-block;vertical-align:top;width:600px;height:350px;}
 
-div#date {display:inline-block;width:200px;height:350px;background:#fff;border:solid 30px 	#FF2D2D;}
 
+div#date {display:inline-block;vertical-align:top;width:250px;height:350px;background:#fff;margin:5px}
+
+div#diary {background:#484891;display:inline-block;border-radius:10px;width:230px;height:130px;align:center;padding:20px;}
 img#index {max-height:300px;max-width:500px;}
+
+font#day {size:40;font-color:#C7C7E2;}
