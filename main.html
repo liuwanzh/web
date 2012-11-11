@@ -15,19 +15,25 @@
                     if(i<1)
                     {
                         
-                        $("[src='" + pics[0] + "']").fadeOut("slow",function(){$(pics[i+1]).fadeIn("slow")});
+                    $("[src='" + pics[i] + "']").fadeOut("normal");
+                    $("[src='"+pics[i+1] + "']").fadeIn("normal");
                         i+=1;
                     }
                     else
                     {
-                        $("pics[i]").fadeOut("slow",function(){$(pics[0]).fadeIn("slow")});
+                    $("[src='" + pics[i] + "']").fadeOut("fast");
+                    $("[src='"+pics[0]+"']").fadeIn("fast");
                         i=0;
-                        }
-                        }
+                    }
+               }<!--change-->
 
-                        setInterval(change,1000);
+                        setInterval(change,3000);
         
-                    })
+                        })
+disp_alert()
+{
+    alert(x);
+}
         </script>
 </head>
 
@@ -39,8 +45,17 @@
 
 <div id="content">
     <div id="picture">
-    <p align="center"> 
-    <img id="index" src="pic/1.jpg">
+        <p align="center">
+
+
+        <script type="text/javascript">
+            var x="#picture".getBoundingClientRect().left;
+            response.write "alert('"&x&"');";
+            var y="#picture".getBoundingClientRect().top;
+        document.write('<img id="index" position="absolute" left="'+x+" top='"+y+ ' src="'+pics[0]+'"></img>');
+        document.write('<img id="index" src='+pics[1]+' style="display:none"></img>');
+    </script>
+
     </p>
     </div>
 
@@ -56,10 +71,5 @@ document.write(' <div id = "date" > <p align="right"> <font  id="day" color="#48
 
 <hr size="5" color="#C7C7E2">
 <!--    <div id="date"> <h2 color="003E3E">11月5日</h2></div>  -->
-
-<script type="text/javascript">
-    document.write('<img src='+pics[0]+'></img>');
-document.write('<img src='+pics[1]+ 'style="display:none"></img>');
-</script>
 </body>
 
