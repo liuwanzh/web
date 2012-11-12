@@ -15,14 +15,14 @@
                     if(i<1)
                     {
                         
-                    $("[src='" + pics[i] + "']").fadeOut("normal");
-                    $("[src='"+pics[i+1] + "']").fadeIn("normal");
+                    $("[src='" + pics[i] + "']").fadeOut("slow");
+                    $("[src='"+pics[i+1] + "']").fadeIn("slow");
                         i+=1;
                     }
                     else
                     {
-                    $("[src='" + pics[i] + "']").fadeOut("fast");
-                    $("[src='"+pics[0]+"']").fadeIn("fast");
+                    $("[src='" + pics[i] + "']").fadeOut("slow");
+                    $("[src='"+pics[0]+"']").fadeIn("slow");
                         i=0;
                     }
                }<!--change-->
@@ -30,33 +30,29 @@
                         setInterval(change,3000);
         
                         })
-disp_alert()
-{
-    alert(x);
-}
         </script>
 </head>
 
-<body>
+<body bgcolor="#E6E6F2">
+  <div  id="menu">
+    <ul>
+      <li class="index"><a href="www.baidu.com">首页</a></li>
+      <li class="blogs">博文<a href="#"></a></li>
+      <li class="value">推荐<a href="#"></a></li>
+    </ul>
+  </div>
+
 <div id="header"> <h1>I love my mom.</h1>
 </div>
 
 <hr size="10" color="#C7C7E2">
 
-<div id="content">
-    <div id="picture">
-        <p align="center">
+<div id="content" bgcolor="#E6E6F2">
+    <div id="picture" bgcolor="#E6E6F2">
 
-
-        <script type="text/javascript">
-            var x="#picture".getBoundingClientRect().left;
-            response.write "alert('"&x&"');";
-            var y="#picture".getBoundingClientRect().top;
-        document.write('<img id="index" position="absolute" left="'+x+" top='"+y+ ' src="'+pics[0]+'"></img>');
-        document.write('<img id="index" src='+pics[1]+' style="display:none"></img>');
-    </script>
-
-    </p>
+    <img id="index" src="pic/1.jpg">  </img>
+    <img id="index" src="pic/2.jpg"  style="display:none">  </img>
+  
     </div>
 
 <script type="text/javascript">
@@ -64,7 +60,7 @@ var myDate =new Date();
 var day = myDate.getDate();
 var month= myDate.getMonth();
 var year= myDate.getYear() + 1900;
-document.write(' <div id = "date" > <p align="right"> <font  id="day" color="#484891" size="8" >'+ day +'</font> </p> <p align="right"> <font color="#C7C7E2" size="4">'+ year + '.' + month +'</font> </p>');
+document.write(' <div id = "date" style="background-color:#E6E6F2" > <p align="right"> <font  id="day" color="#484891" size="8" >'+ day +'</font> </p> <p align="right"> <font color="#C7C7E2" size="4">'+ year + '.' + month +'</font> </p>');
 </script>
 
 <div id="diary"> <p> <font color="white">我想回家。你呢？</font></p> </div> </div>

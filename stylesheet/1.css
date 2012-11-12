@@ -1,30 +1,24 @@
-body {margin:0px;}
-div#header {background-color:#484891;height:200px;margin:0px}
+body{margin:0;padding:0;}
+
+div#menu {height:2px;margin:0;padding:0;}
+
+ul li {display:inline-block;float:right;margin:0;width:60px;font-color:#FFFFFF}
+
+div#header {background-color:#484891;height:200px;margin:0;}
 h1 {color:#FFFFFF;font-size:50px;padding:10px 10px 10px 100px;}
 
 div#content {margin:10px;padding:10px 10px 10px 10px;
 width:900px;margin:auto;}
 
 
-div#picture {display:inline-block;vertical-align:top;width:600px;height:350px;}
+div#picture {display:inline-block;vertical-align:top;width:600px;height:450px;}
 
 
 div#date {display:inline-block;vertical-align:top;width:250px;height:350px;background:#fff;margin:5px}
 
-div#diary {background:#484891;display:inline-block;border-radius:10px;width:230px;height:130px;align:center;padding:20px;}
-img#index {position:relative;left:10px;top:10px;max-height:300px;max-width:500px;}
+div#diary {background:#484891;display:inline-block;border-radius:10px;width:200px;height:130px;margin-left:20px;align:center;padding:20px;}
+img#index {position:absolute;margin-left:0px;margin-top:10px;max-height:450px;max-width:600px;}
 
 font#day {size:40;font-color:#C7C7E2;}
 
 
-.trans_fade_image {
-        position:absolute;
-            -webkit-transition: opacity 1s ease-in-out;
-                -moz-transition: opacity 1s ease-in-out;
-                    -o-transition: opacity 1s ease-in-out;
-                        transition: opacity 1s ease-in-out;
-                    }
-                    .trans_fade_image_click {
-                            opacity:0;
-                                filter: alpha(opacity=0);
-                            }
