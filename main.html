@@ -30,22 +30,26 @@
                         setInterval(change,3000);
         
                         })
+
+function setStyle(x)
+{
+  document.getElementById(x).color="yellow"
+  }
         </script>
 </head>
 
 <body bgcolor="#E6E6F2">
-  <div  id="menu">
+    <div  id="menu">
     <ul>
-      <li class="index"><a href="www.baidu.com">首页</a></li>
-      <li class="blogs">博文<a href="#"></a></li>
-      <li class="value">推荐<a href="#"></a></li>
+      <li class="index"><a  href="main.html">首页</font></a></li>
+      <li class="blogs"><a href="1.html">博文</a></li>
+      <li class="value"><a href="1.html">推荐</a></li>
     </ul>
   </div>
 
-<div id="header"> <h1>I love my mom.</h1>
-</div>
-
-<hr size="10" color="#C7C7E2">
+  <div id="header"> <h1 id="blog-title">Liu Wanzhen</h1>
+        <h2 id="blog-subtitle">&nbsp &nbsp &nbsp Nevermind,I'll find someone like you.</h2>
+      </div>
 
 <div id="content" bgcolor="#E6E6F2">
     <div id="picture" bgcolor="#E6E6F2">
@@ -60,12 +64,13 @@ var myDate =new Date();
 var day = myDate.getDate();
 var month= myDate.getMonth();
 var year= myDate.getYear() + 1900;
-document.write(' <div id = "date" style="background-color:#E6E6F2" > <p align="right"> <font  id="day" color="#484891" size="8" >'+ day +'</font> </p> <p align="right"> <font color="#C7C7E2" size="4">'+ year + '.' + month +'</font> </p>');
+document.write(' <div id = "date" style="background-color:#E6E6F2" > <p align="right"> <font  id="day" color="#484891" size="10" style="font-weight:600">'+ day +'</font> </p> <p align="right"> <font color="#ADADAD" size="6">'+ year + '.' + month +'</font> </p>');
 </script>
 
-<div id="diary"> <p> <font color="white">我想回家。你呢？</font></p> </div> </div>
+<div id="diary"> <p> <font color="white">今天去南校，忘记了买药。</font></p> </div> </div>
 
-<hr size="5" color="#C7C7E2">
+<hr size="8" color="#C7C7E2">
+<p id="tail" align="center"><font color="#000000" size="3">Contact me via &nbsp </font><font color="#484891" size="3">liuwanzh@qq.com</font></p>
 <!--    <div id="date"> <h2 color="003E3E">11月5日</h2></div>  -->
 </body>
 
